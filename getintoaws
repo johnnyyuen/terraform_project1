@@ -1,0 +1,1 @@
+ssh -i "/Users/johnnyyuen/Downloads/main_key_jysnt.pem" ubuntu@54.205.155.9

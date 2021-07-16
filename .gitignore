@@ -1,0 +1,4 @@
+.terraform
+*.bak
+*.pem
+*.backup

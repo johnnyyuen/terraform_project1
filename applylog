@@ -1,0 +1,533 @@
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create
+[0m
+Terraform will perform the following actions:
+
+[1m  # aws_eip.web1-eip-1[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_eip" "web1-eip-1" {
+      [32m+[0m [0m[1m[0mallocation_id[0m[0m             = (known after apply)
+      [32m+[0m [0m[1m[0massociate_with_private_ip[0m[0m = "10.0.1.50"
+      [32m+[0m [0m[1m[0massociation_id[0m[0m            = (known after apply)
+      [32m+[0m [0m[1m[0mcarrier_ip[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0mcustomer_owned_ip[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mdomain[0m[0m                    = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                        = (known after apply)
+      [32m+[0m [0m[1m[0minstance[0m[0m                  = (known after apply)
+      [32m+[0m [0m[1m[0mnetwork_border_group[0m[0m      = (known after apply)
+      [32m+[0m [0m[1m[0mnetwork_interface[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_dns[0m[0m               = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_ip[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0mpublic_dns[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0mpublic_ip[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0mpublic_ipv4_pool[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0mtags_all[0m[0m                  = (known after apply)
+      [32m+[0m [0m[1m[0mvpc[0m[0m                       = true
+    }
+
+[1m  # aws_eip.web2-eip-2[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_eip" "web2-eip-2" {
+      [32m+[0m [0m[1m[0mallocation_id[0m[0m             = (known after apply)
+      [32m+[0m [0m[1m[0massociate_with_private_ip[0m[0m = "10.0.1.51"
+      [32m+[0m [0m[1m[0massociation_id[0m[0m            = (known after apply)
+      [32m+[0m [0m[1m[0mcarrier_ip[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0mcustomer_owned_ip[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mdomain[0m[0m                    = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                        = (known after apply)
+      [32m+[0m [0m[1m[0minstance[0m[0m                  = (known after apply)
+      [32m+[0m [0m[1m[0mnetwork_border_group[0m[0m      = (known after apply)
+      [32m+[0m [0m[1m[0mnetwork_interface[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_dns[0m[0m               = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_ip[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0mpublic_dns[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0mpublic_ip[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0mpublic_ipv4_pool[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0mtags_all[0m[0m                  = (known after apply)
+      [32m+[0m [0m[1m[0mvpc[0m[0m                       = true
+    }
+
+[1m  # aws_instance.web-server-instance-1[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_instance" "web-server-instance-1" {
+      [32m+[0m [0m[1m[0mami[0m[0m                                  = "ami-09e67e426f25ce0d7"
+      [32m+[0m [0m[1m[0marn[0m[0m                                  = (known after apply)
+      [32m+[0m [0m[1m[0massociate_public_ip_address[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0mavailability_zone[0m[0m                    = "us-east-1a"
+      [32m+[0m [0m[1m[0mcpu_core_count[0m[0m                       = (known after apply)
+      [32m+[0m [0m[1m[0mcpu_threads_per_core[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0mget_password_data[0m[0m                    = false
+      [32m+[0m [0m[1m[0mhost_id[0m[0m                              = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                                   = (known after apply)
+      [32m+[0m [0m[1m[0minstance_initiated_shutdown_behavior[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0minstance_state[0m[0m                       = (known after apply)
+      [32m+[0m [0m[1m[0minstance_type[0m[0m                        = "t2.micro"
+      [32m+[0m [0m[1m[0mipv6_address_count[0m[0m                   = (known after apply)
+      [32m+[0m [0m[1m[0mipv6_addresses[0m[0m                       = (known after apply)
+      [32m+[0m [0m[1m[0mkey_name[0m[0m                             = "main_key_jysnt"
+      [32m+[0m [0m[1m[0moutpost_arn[0m[0m                          = (known after apply)
+      [32m+[0m [0m[1m[0mpassword_data[0m[0m                        = (known after apply)
+      [32m+[0m [0m[1m[0mplacement_group[0m[0m                      = (known after apply)
+      [32m+[0m [0m[1m[0mprimary_network_interface_id[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_dns[0m[0m                          = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_ip[0m[0m                           = (known after apply)
+      [32m+[0m [0m[1m[0mpublic_dns[0m[0m                           = (known after apply)
+      [32m+[0m [0m[1m[0mpublic_ip[0m[0m                            = (known after apply)
+      [32m+[0m [0m[1m[0msecondary_private_ips[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0msecurity_groups[0m[0m                      = (known after apply)
+      [32m+[0m [0m[1m[0msubnet_id[0m[0m                            = (known after apply)
+      [32m+[0m [0m[1m[0mtags[0m[0m                                 = {
+          [32m+[0m [0m"Name" = "Ubuntu web server-1"
+        }
+      [32m+[0m [0m[1m[0mtags_all[0m[0m                             = {
+          [32m+[0m [0m"Name" = "Ubuntu web server-1"
+        }
+      [32m+[0m [0m[1m[0mtenancy[0m[0m                              = (known after apply)
+      [32m+[0m [0m[1m[0muser_data[0m[0m                            = "aaefdd4f927a4c2434957fb44fd2969bc0f99167"
+      [32m+[0m [0m[1m[0mvpc_security_group_ids[0m[0m               = (known after apply)
+
+      [32m+[0m [0mcapacity_reservation_specification {
+          [32m+[0m [0m[1m[0mcapacity_reservation_preference[0m[0m = (known after apply)
+
+          [32m+[0m [0mcapacity_reservation_target {
+              [32m+[0m [0m[1m[0mcapacity_reservation_id[0m[0m = (known after apply)
+            }
+        }
+
+      [32m+[0m [0mebs_block_device {
+          [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mdevice_name[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mencrypted[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0miops[0m[0m                  = (known after apply)
+          [32m+[0m [0m[1m[0mkms_key_id[0m[0m            = (known after apply)
+          [32m+[0m [0m[1m[0msnapshot_id[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mtags[0m[0m                  = (known after apply)
+          [32m+[0m [0m[1m[0mthroughput[0m[0m            = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_id[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_size[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_type[0m[0m           = (known after apply)
+        }
+
+      [32m+[0m [0menclave_options {
+          [32m+[0m [0m[1m[0menabled[0m[0m = (known after apply)
+        }
+
+      [32m+[0m [0mephemeral_block_device {
+          [32m+[0m [0m[1m[0mdevice_name[0m[0m  = (known after apply)
+          [32m+[0m [0m[1m[0mno_device[0m[0m    = (known after apply)
+          [32m+[0m [0m[1m[0mvirtual_name[0m[0m = (known after apply)
+        }
+
+      [32m+[0m [0mmetadata_options {
+          [32m+[0m [0m[1m[0mhttp_endpoint[0m[0m               = (known after apply)
+          [32m+[0m [0m[1m[0mhttp_put_response_hop_limit[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mhttp_tokens[0m[0m                 = (known after apply)
+        }
+
+      [32m+[0m [0mnetwork_interface {
+          [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = false
+          [32m+[0m [0m[1m[0mdevice_index[0m[0m          = 0
+          [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m  = (known after apply)
+        }
+
+      [32m+[0m [0mroot_block_device {
+          [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mdevice_name[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mencrypted[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0miops[0m[0m                  = (known after apply)
+          [32m+[0m [0m[1m[0mkms_key_id[0m[0m            = (known after apply)
+          [32m+[0m [0m[1m[0mtags[0m[0m                  = (known after apply)
+          [32m+[0m [0m[1m[0mthroughput[0m[0m            = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_id[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_size[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_type[0m[0m           = (known after apply)
+        }
+    }
+
+[1m  # aws_instance.web-server-instance-2[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_instance" "web-server-instance-2" {
+      [32m+[0m [0m[1m[0mami[0m[0m                                  = "ami-09e67e426f25ce0d7"
+      [32m+[0m [0m[1m[0marn[0m[0m                                  = (known after apply)
+      [32m+[0m [0m[1m[0massociate_public_ip_address[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0mavailability_zone[0m[0m                    = "us-east-1a"
+      [32m+[0m [0m[1m[0mcpu_core_count[0m[0m                       = (known after apply)
+      [32m+[0m [0m[1m[0mcpu_threads_per_core[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0mget_password_data[0m[0m                    = false
+      [32m+[0m [0m[1m[0mhost_id[0m[0m                              = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                                   = (known after apply)
+      [32m+[0m [0m[1m[0minstance_initiated_shutdown_behavior[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0minstance_state[0m[0m                       = (known after apply)
+      [32m+[0m [0m[1m[0minstance_type[0m[0m                        = "t2.micro"
+      [32m+[0m [0m[1m[0mipv6_address_count[0m[0m                   = (known after apply)
+      [32m+[0m [0m[1m[0mipv6_addresses[0m[0m                       = (known after apply)
+      [32m+[0m [0m[1m[0mkey_name[0m[0m                             = "main_key_jysnt"
+      [32m+[0m [0m[1m[0moutpost_arn[0m[0m                          = (known after apply)
+      [32m+[0m [0m[1m[0mpassword_data[0m[0m                        = (known after apply)
+      [32m+[0m [0m[1m[0mplacement_group[0m[0m                      = (known after apply)
+      [32m+[0m [0m[1m[0mprimary_network_interface_id[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_dns[0m[0m                          = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_ip[0m[0m                           = (known after apply)
+      [32m+[0m [0m[1m[0mpublic_dns[0m[0m                           = (known after apply)
+      [32m+[0m [0m[1m[0mpublic_ip[0m[0m                            = (known after apply)
+      [32m+[0m [0m[1m[0msecondary_private_ips[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0msecurity_groups[0m[0m                      = (known after apply)
+      [32m+[0m [0m[1m[0msubnet_id[0m[0m                            = (known after apply)
+      [32m+[0m [0m[1m[0mtags[0m[0m                                 = {
+          [32m+[0m [0m"Name" = "Ubuntu web server-2"
+        }
+      [32m+[0m [0m[1m[0mtags_all[0m[0m                             = {
+          [32m+[0m [0m"Name" = "Ubuntu web server-2"
+        }
+      [32m+[0m [0m[1m[0mtenancy[0m[0m                              = (known after apply)
+      [32m+[0m [0m[1m[0muser_data[0m[0m                            = "aaefdd4f927a4c2434957fb44fd2969bc0f99167"
+      [32m+[0m [0m[1m[0mvpc_security_group_ids[0m[0m               = (known after apply)
+
+      [32m+[0m [0mcapacity_reservation_specification {
+          [32m+[0m [0m[1m[0mcapacity_reservation_preference[0m[0m = (known after apply)
+
+          [32m+[0m [0mcapacity_reservation_target {
+              [32m+[0m [0m[1m[0mcapacity_reservation_id[0m[0m = (known after apply)
+            }
+        }
+
+      [32m+[0m [0mebs_block_device {
+          [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mdevice_name[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mencrypted[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0miops[0m[0m                  = (known after apply)
+          [32m+[0m [0m[1m[0mkms_key_id[0m[0m            = (known after apply)
+          [32m+[0m [0m[1m[0msnapshot_id[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mtags[0m[0m                  = (known after apply)
+          [32m+[0m [0m[1m[0mthroughput[0m[0m            = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_id[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_size[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_type[0m[0m           = (known after apply)
+        }
+
+      [32m+[0m [0menclave_options {
+          [32m+[0m [0m[1m[0menabled[0m[0m = (known after apply)
+        }
+
+      [32m+[0m [0mephemeral_block_device {
+          [32m+[0m [0m[1m[0mdevice_name[0m[0m  = (known after apply)
+          [32m+[0m [0m[1m[0mno_device[0m[0m    = (known after apply)
+          [32m+[0m [0m[1m[0mvirtual_name[0m[0m = (known after apply)
+        }
+
+      [32m+[0m [0mmetadata_options {
+          [32m+[0m [0m[1m[0mhttp_endpoint[0m[0m               = (known after apply)
+          [32m+[0m [0m[1m[0mhttp_put_response_hop_limit[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mhttp_tokens[0m[0m                 = (known after apply)
+        }
+
+      [32m+[0m [0mnetwork_interface {
+          [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = false
+          [32m+[0m [0m[1m[0mdevice_index[0m[0m          = 0
+          [32m+[0m [0m[1m[0mnetwork_interface_id[0m[0m  = (known after apply)
+        }
+
+      [32m+[0m [0mroot_block_device {
+          [32m+[0m [0m[1m[0mdelete_on_termination[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mdevice_name[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mencrypted[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0miops[0m[0m                  = (known after apply)
+          [32m+[0m [0m[1m[0mkms_key_id[0m[0m            = (known after apply)
+          [32m+[0m [0m[1m[0mtags[0m[0m                  = (known after apply)
+          [32m+[0m [0m[1m[0mthroughput[0m[0m            = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_id[0m[0m             = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_size[0m[0m           = (known after apply)
+          [32m+[0m [0m[1m[0mvolume_type[0m[0m           = (known after apply)
+        }
+    }
+
+[1m  # aws_internet_gateway.gw-1[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_internet_gateway" "gw-1" {
+      [32m+[0m [0m[1m[0marn[0m[0m      = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m       = (known after apply)
+      [32m+[0m [0m[1m[0mowner_id[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0mtags[0m[0m     = {
+          [32m+[0m [0m"Name" = "prod_internet_gateway"
+        }
+      [32m+[0m [0m[1m[0mtags_all[0m[0m = {
+          [32m+[0m [0m"Name" = "prod_internet_gateway"
+        }
+      [32m+[0m [0m[1m[0mvpc_id[0m[0m   = (known after apply)
+    }
+
+[1m  # aws_network_interface.web-server-nic-1[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_network_interface" "web-server-nic-1" {
+      [32m+[0m [0m[1m[0mid[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0minterface_type[0m[0m     = (known after apply)
+      [32m+[0m [0m[1m[0mipv6_address_count[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0mipv6_addresses[0m[0m     = (known after apply)
+      [32m+[0m [0m[1m[0mmac_address[0m[0m        = (known after apply)
+      [32m+[0m [0m[1m[0moutpost_arn[0m[0m        = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_dns_name[0m[0m   = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_ip[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_ips[0m[0m        = [
+          [32m+[0m [0m"10.0.1.50",
+        ]
+      [32m+[0m [0m[1m[0mprivate_ips_count[0m[0m  = (known after apply)
+      [32m+[0m [0m[1m[0msecurity_groups[0m[0m    = (known after apply)
+      [32m+[0m [0m[1m[0msource_dest_check[0m[0m  = true
+      [32m+[0m [0m[1m[0msubnet_id[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0mtags_all[0m[0m           = (known after apply)
+
+      [32m+[0m [0mattachment {
+          [32m+[0m [0m[1m[0mattachment_id[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mdevice_index[0m[0m  = (known after apply)
+          [32m+[0m [0m[1m[0minstance[0m[0m      = (known after apply)
+        }
+    }
+
+[1m  # aws_network_interface.web-server-nic-2[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_network_interface" "web-server-nic-2" {
+      [32m+[0m [0m[1m[0mid[0m[0m                 = (known after apply)
+      [32m+[0m [0m[1m[0minterface_type[0m[0m     = (known after apply)
+      [32m+[0m [0m[1m[0mipv6_address_count[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0mipv6_addresses[0m[0m     = (known after apply)
+      [32m+[0m [0m[1m[0mmac_address[0m[0m        = (known after apply)
+      [32m+[0m [0m[1m[0moutpost_arn[0m[0m        = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_dns_name[0m[0m   = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_ip[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mprivate_ips[0m[0m        = [
+          [32m+[0m [0m"10.0.1.51",
+        ]
+      [32m+[0m [0m[1m[0mprivate_ips_count[0m[0m  = (known after apply)
+      [32m+[0m [0m[1m[0msecurity_groups[0m[0m    = (known after apply)
+      [32m+[0m [0m[1m[0msource_dest_check[0m[0m  = true
+      [32m+[0m [0m[1m[0msubnet_id[0m[0m          = (known after apply)
+      [32m+[0m [0m[1m[0mtags_all[0m[0m           = (known after apply)
+
+      [32m+[0m [0mattachment {
+          [32m+[0m [0m[1m[0mattachment_id[0m[0m = (known after apply)
+          [32m+[0m [0m[1m[0mdevice_index[0m[0m  = (known after apply)
+          [32m+[0m [0m[1m[0minstance[0m[0m      = (known after apply)
+        }
+    }
+
+[1m  # aws_route_table.prod-route-table[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_route_table" "prod-route-table" {
+      [32m+[0m [0m[1m[0marn[0m[0m              = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m               = (known after apply)
+      [32m+[0m [0m[1m[0mowner_id[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mpropagating_vgws[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0mroute[0m[0m            = [
+          [32m+[0m [0m{
+              [32m+[0m [0mcarrier_gateway_id         = ""
+              [32m+[0m [0mcidr_block                 = ""
+              [32m+[0m [0mdestination_prefix_list_id = ""
+              [32m+[0m [0megress_only_gateway_id     = ""
+              [32m+[0m [0mgateway_id                 = (known after apply)
+              [32m+[0m [0minstance_id                = ""
+              [32m+[0m [0mipv6_cidr_block            = "::/0"
+              [32m+[0m [0mlocal_gateway_id           = ""
+              [32m+[0m [0mnat_gateway_id             = ""
+              [32m+[0m [0mnetwork_interface_id       = ""
+              [32m+[0m [0mtransit_gateway_id         = ""
+              [32m+[0m [0mvpc_endpoint_id            = ""
+              [32m+[0m [0mvpc_peering_connection_id  = ""
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcarrier_gateway_id         = ""
+              [32m+[0m [0mcidr_block                 = "0.0.0.0/0"
+              [32m+[0m [0mdestination_prefix_list_id = ""
+              [32m+[0m [0megress_only_gateway_id     = ""
+              [32m+[0m [0mgateway_id                 = (known after apply)
+              [32m+[0m [0minstance_id                = ""
+              [32m+[0m [0mipv6_cidr_block            = ""
+              [32m+[0m [0mlocal_gateway_id           = ""
+              [32m+[0m [0mnat_gateway_id             = ""
+              [32m+[0m [0mnetwork_interface_id       = ""
+              [32m+[0m [0mtransit_gateway_id         = ""
+              [32m+[0m [0mvpc_endpoint_id            = ""
+              [32m+[0m [0mvpc_peering_connection_id  = ""
+            },
+        ]
+      [32m+[0m [0m[1m[0mtags_all[0m[0m         = (known after apply)
+      [32m+[0m [0m[1m[0mvpc_id[0m[0m           = (known after apply)
+    }
+
+[1m  # aws_route_table_association.a[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_route_table_association" "a" {
+      [32m+[0m [0m[1m[0mid[0m[0m             = (known after apply)
+      [32m+[0m [0m[1m[0mroute_table_id[0m[0m = (known after apply)
+      [32m+[0m [0m[1m[0msubnet_id[0m[0m      = (known after apply)
+    }
+
+[1m  # aws_security_group.allow_web[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_security_group" "allow_web" {
+      [32m+[0m [0m[1m[0marn[0m[0m                    = (known after apply)
+      [32m+[0m [0m[1m[0mdescription[0m[0m            = "Allow web inbound traffic"
+      [32m+[0m [0m[1m[0megress[0m[0m                 = [
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"0.0.0.0/0",
+                ]
+              [32m+[0m [0mdescription      = ""
+              [32m+[0m [0mfrom_port        = 0
+              [32m+[0m [0mipv6_cidr_blocks = [
+                  [32m+[0m [0m"::/0",
+                ]
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "-1"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 0
+            },
+        ]
+      [32m+[0m [0m[1m[0mid[0m[0m                     = (known after apply)
+      [32m+[0m [0m[1m[0mingress[0m[0m                = [
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"0.0.0.0/0",
+                ]
+              [32m+[0m [0mdescription      = "HTTP from VPC"
+              [32m+[0m [0mfrom_port        = 80
+              [32m+[0m [0mipv6_cidr_blocks = [
+                  [32m+[0m [0m"::/0",
+                ]
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 80
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"0.0.0.0/0",
+                ]
+              [32m+[0m [0mdescription      = "HTTPS from VPC"
+              [32m+[0m [0mfrom_port        = 443
+              [32m+[0m [0mipv6_cidr_blocks = [
+                  [32m+[0m [0m"::/0",
+                ]
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 443
+            },
+          [32m+[0m [0m{
+              [32m+[0m [0mcidr_blocks      = [
+                  [32m+[0m [0m"0.0.0.0/0",
+                ]
+              [32m+[0m [0mdescription      = "SSH from VPC"
+              [32m+[0m [0mfrom_port        = 22
+              [32m+[0m [0mipv6_cidr_blocks = [
+                  [32m+[0m [0m"::/0",
+                ]
+              [32m+[0m [0mprefix_list_ids  = []
+              [32m+[0m [0mprotocol         = "tcp"
+              [32m+[0m [0msecurity_groups  = []
+              [32m+[0m [0mself             = false
+              [32m+[0m [0mto_port          = 22
+            },
+        ]
+      [32m+[0m [0m[1m[0mname[0m[0m                   = "allow_web_traffic"
+      [32m+[0m [0m[1m[0mname_prefix[0m[0m            = (known after apply)
+      [32m+[0m [0m[1m[0mowner_id[0m[0m               = (known after apply)
+      [32m+[0m [0m[1m[0mrevoke_rules_on_delete[0m[0m = false
+      [32m+[0m [0m[1m[0mtags[0m[0m                   = {
+          [32m+[0m [0m"Name" = "allow_web"
+        }
+      [32m+[0m [0m[1m[0mtags_all[0m[0m               = {
+          [32m+[0m [0m"Name" = "allow_web"
+        }
+      [32m+[0m [0m[1m[0mvpc_id[0m[0m                 = (known after apply)
+    }
+
+[1m  # aws_subnet.subnet-1[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_subnet" "subnet-1" {
+      [32m+[0m [0m[1m[0marn[0m[0m                             = (known after apply)
+      [32m+[0m [0m[1m[0massign_ipv6_address_on_creation[0m[0m = false
+      [32m+[0m [0m[1m[0mavailability_zone[0m[0m               = "us-east-1a"
+      [32m+[0m [0m[1m[0mavailability_zone_id[0m[0m            = (known after apply)
+      [32m+[0m [0m[1m[0mcidr_block[0m[0m                      = "10.0.1.0/24"
+      [32m+[0m [0m[1m[0mid[0m[0m                              = (known after apply)
+      [32m+[0m [0m[1m[0mipv6_cidr_block_association_id[0m[0m  = (known after apply)
+      [32m+[0m [0m[1m[0mmap_public_ip_on_launch[0m[0m         = false
+      [32m+[0m [0m[1m[0mowner_id[0m[0m                        = (known after apply)
+      [32m+[0m [0m[1m[0mtags[0m[0m                            = {
+          [32m+[0m [0m"Name" = "prod-subnet"
+        }
+      [32m+[0m [0m[1m[0mtags_all[0m[0m                        = {
+          [32m+[0m [0m"Name" = "prod-subnet"
+        }
+      [32m+[0m [0m[1m[0mvpc_id[0m[0m                          = (known after apply)
+    }
+
+[1m  # aws_vpc.prod-vpc[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_vpc" "prod-vpc" {
+      [32m+[0m [0m[1m[0marn[0m[0m                              = (known after apply)
+      [32m+[0m [0m[1m[0massign_generated_ipv6_cidr_block[0m[0m = false
+      [32m+[0m [0m[1m[0mcidr_block[0m[0m                       = "10.0.0.0/16"
+      [32m+[0m [0m[1m[0mdefault_network_acl_id[0m[0m           = (known after apply)
+      [32m+[0m [0m[1m[0mdefault_route_table_id[0m[0m           = (known after apply)
+      [32m+[0m [0m[1m[0mdefault_security_group_id[0m[0m        = (known after apply)
+      [32m+[0m [0m[1m[0mdhcp_options_id[0m[0m                  = (known after apply)
+      [32m+[0m [0m[1m[0menable_classiclink[0m[0m               = (known after apply)
+      [32m+[0m [0m[1m[0menable_classiclink_dns_support[0m[0m   = (known after apply)
+      [32m+[0m [0m[1m[0menable_dns_hostnames[0m[0m             = (known after apply)
+      [32m+[0m [0m[1m[0menable_dns_support[0m[0m               = true
+      [32m+[0m [0m[1m[0mid[0m[0m                               = (known after apply)
+      [32m+[0m [0m[1m[0minstance_tenancy[0m[0m                 = "default"
+      [32m+[0m [0m[1m[0mipv6_association_id[0m[0m              = (known after apply)
+      [32m+[0m [0m[1m[0mipv6_cidr_block[0m[0m                  = (known after apply)
+      [32m+[0m [0m[1m[0mmain_route_table_id[0m[0m              = (known after apply)
+      [32m+[0m [0m[1m[0mowner_id[0m[0m                         = (known after apply)
+      [32m+[0m [0m[1m[0mtags[0m[0m                             = {
+          [32m+[0m [0m"Name" = "productionVPC"
+        }
+      [32m+[0m [0m[1m[0mtags_all[0m[0m                         = {
+          [32m+[0m [0m"Name" = "productionVPC"
+        }
+    }
+
+[0m[1mPlan:[0m 12 to add, 0 to change, 0 to destroy.
+[0m[0m
+[1mChanges to Outputs:[0m[0m
+  [32m+[0m [0m[1m[0mserver_private_id[0m[0m = (known after apply)
+  [32m+[0m [0m[1m[0mserver_public_ip[0m[0m  = (known after apply)
+[0m[1maws_vpc.prod-vpc: Creating...[0m[0m
+[0m[1maws_vpc.prod-vpc: Still creating... [10s elapsed][0m[0m
+[0m[1maws_vpc.prod-vpc: Still creating... [20s elapsed][0m[0m
+[0m[1maws_vpc.prod-vpc: Creation complete after 23s [id=vpc-0c52726c932654afd][0m
+[0m[1maws_internet_gateway.gw-1: Creating...[0m[0m
+[0m[1maws_subnet.subnet-1: Creating...[0m[0m
+[0m[1maws_security_group.allow_web: Creating...[0m[0m
+[0m[1maws_subnet.subnet-1: Creation complete after 9s [id=subnet-0b2948d8c2af9a7e2][0m
+[0m[1maws_internet_gateway.gw-1: Still creating... [10s elapsed][0m[0m
+[0m[1maws_security_group.allow_web: Still creating... [10s elapsed][0m[0m
+[0m[1maws_internet_gateway.gw-1: Creation complete after 12s [id=igw-04cc9d437edabec7b][0m
+[0m[1maws_route_table.prod-route-table: Creating...[0m[0m
+[0m[1maws_security_group.allow_web: Creation complete after 19s [id=sg-0b93bf9695f4b2f87][0m
+[0m[1maws_network_interface.web-server-nic-2: Creating...[0m[0m
+[0m[1maws_network_interface.web-server-nic-1: Creating...[0m[0m
+[0m[1maws_route_table.prod-route-table: Still creating... [10s elapsed][0m[0m
+[0m[1maws_network_interface.web-server-nic-2: Still creating... [10s elapsed][0m[0m
+[0m[1maws_network_interface.web-server-nic-1: Still creating... [10s elapsed][0m[0m
+[0m[1maws_route_table.prod-route-table: Creation complete after 19s [id=rtb-0f924dcc999bd9d92][0m
+[0m[1maws_route_table_association.a: Creating...[0m[0m
+[0m[1maws_route_table_association.a: Creation complete after 6s [id=rtbassoc-0f840abc9be49e4a0][0m
+[0m[1maws_network_interface.web-server-nic-2: Still creating... [20s elapsed][0m[0m
+[0m[1maws_network_interface.web-server-nic-1: Still creating... [20s elapsed][0m[0m
+[0m[1maws_network_interface.web-server-nic-2: Still creating... [30s elapsed][0m[0m
+[0m[1maws_network_interface.web-server-nic-1: Still creating... [30s elapsed][0m[0m
+[0m[1maws_network_interface.web-server-nic-1: Creation complete after 38s [id=eni-0647fb0c1f1ac711a][0m
+[0m[1maws_eip.web1-eip-1: Creating...[0m[0m
+[0m[1maws_instance.web-server-instance-1: Creating...[0m[0m
+[0m[1maws_network_interface.web-server-nic-2: Creation complete after 39s [id=eni-05976505a825f9605][0m
+[0m[1maws_eip.web2-eip-2: Creating...[0m[0m
+[0m[1maws_instance.web-server-instance-2: Creating...[0m[0m
+[0m[1maws_instance.web-server-instance-1: Still creating... [10s elapsed][0m[0m
+[0m[1maws_instance.web-server-instance-2: Still creating... [10s elapsed][0m[0m
+[0m[1maws_instance.web-server-instance-1: Still creating... [20s elapsed][0m[0m
+[0m[1maws_instance.web-server-instance-2: Still creating... [20s elapsed][0m[0m
+[0m[1maws_instance.web-server-instance-1: Still creating... [30s elapsed][0m[0m
+[0m[1maws_instance.web-server-instance-2: Still creating... [30s elapsed][0m[0m
+[0m[1maws_instance.web-server-instance-1: Still creating... [40s elapsed][0m[0m
+[0m[1maws_instance.web-server-instance-2: Still creating... [40s elapsed][0m[0m
+[0m[1maws_instance.web-server-instance-1: Still creating... [50s elapsed][0m[0m
+[0m[1maws_instance.web-server-instance-2: Still creating... [50s elapsed][0m[0m
+[0m[1maws_instance.web-server-instance-2: Creation complete after 56s [id=i-073c54426f8ffa5ca][0m
+[0m[1maws_instance.web-server-instance-1: Creation complete after 56s [id=i-0d19c4600b7373ffe][0m
